@@ -89,6 +89,7 @@ nav{
     top: 0;
     left: -100%;
     transition: 0.3s;
+    z-index: 999;
 }
 
 .close {
@@ -234,6 +235,7 @@ nav{
         }
         a{
             display: inline-block;
+            color: var(--mavi);
             background: #ffffffcc;
             margin: 10px 0;
             padding: 8px 20px;
@@ -646,6 +648,21 @@ nav{
             input{
                 display: none;
             }
+
+            #shop:checked ~ label i,
+            #wallet:checked ~ label i,
+            #acc:checked ~ label i,
+            #entr:checked ~ label i,
+            #app-str:checked ~ label i,
+            #for-bsn:checked ~ label i,
+            #for-edu:checked ~ label i,
+            #health:checked ~ label i,
+            #gvrn:checked ~ label i,
+            #value:checked ~ label i,
+            #values:checked ~ label i {
+                transform: rotate(270deg);
+            }
+
             #shop:checked ~ ul,
             #wallet:checked ~ ul,
             #acc:checked ~ ul,
